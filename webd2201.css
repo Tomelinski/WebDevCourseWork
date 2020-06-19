@@ -1,0 +1,253 @@
+/*
+    Author: Tom Zielinski
+    Date: 04/02/2020
+    Filename: webd2201.css
+    Purpose: the Style page for all of Tom's Labs
+
+*/
+
+*{
+    font-size: 15px;
+    font-family: Arial;
+}
+
+.center{
+	text-align: center;
+}
+
+.main{
+	border:0px;
+    border-collapse: collapse;
+}
+
+.temp{
+	margin: auto;
+}
+
+td, th, #descriptiontable, #bookstable, #schedule{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+
+#descriptiontable{
+    margin-left: 20%;
+    margin-right: 20%;
+    width:60%;
+}
+
+#bookstable, .paratable{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+#schedule{
+    width: 100%;
+}
+
+
+.para:nth-child(even){
+    background-color: #c4dfff;
+}
+
+body{
+    margin:20px;
+    background-color:bisque;
+    color:black;
+}
+
+a:hover, a:active{
+    background-color: #e5cdb0;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: purple;
+}
+
+.booktitle, .bookdesc{
+    width: 33%;
+}
+
+.bookauthor{
+    width: 19%;
+}
+
+.bookyear{
+    width: 14%;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+h2{
+    text-align: center;
+}
+
+th{
+    text-align: center;
+}
+
+.left{
+    width: 20%;
+}
+
+.right{
+    width: 80%;
+}
+
+.logo{
+    text-align: center;
+}
+
+.times{
+    width:7.5%;
+    height: 75px;
+}
+
+.timesheet{
+    width: 18.5%;
+    height: 50px;
+}
+
+.class{
+    background-color:lightgray;
+    vertical-align: top;
+}
+
+.lunch{
+    text-align: center;
+    font-weight: bold;
+}
+
+.valid{
+    width: 88px;
+    height: 31px;
+}
+
+.validation{
+    width: 400px;
+}
+
+
+
+/*
+The layout for the rest of this css is a modified version from:
+http://www.maxdesign.com.au/articles/process/
+
+Students are encouraged to read this article.  Great explanation of some sound design concepts with attractive examples provided.
+
+You can cut and paste this at the bottom of your existing css file, and when used in conjunction with the css_layout.html file you unzipped, can wrap your pages into this site.
+*/
+#container
+{
+	margin: 0 auto;
+	width: 1200px;
+	background: #fff;
+}
+
+#header
+{
+	background: #ccc;
+	padding: 20px;
+}
+
+#header h1
+ { 
+	margin: 0;
+	display: inline;
+}
+
+#header img
+{ 
+	vertical-align: middle;
+	width: 150px;
+}
+
+#sites
+{
+	display: inline-block;
+	/*float: left;*/
+	width: 100%;
+	/*width: 1200px;*/
+	background: #333;
+}
+
+#sites ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+#sites ul li
+{
+	list-style-type: none;
+	display: inline-block;
+}
+
+#sites li a
+{
+	display: block;
+	float: left;
+	padding: 5px 10px;
+	color: #fff;
+	text-decoration: none;
+	border-right: 1px solid #fff;
+}
+
+#sites li a:hover { 
+	background-color: #ccc; 
+	color: #000;
+}
+
+#navigation
+{
+	display: inline-block;
+	vertical-align: top;
+	/*clear: left;*/
+	/*float: left;*/
+	/*display: inline;*/
+	width: 240px;
+	padding: 10px 0;
+	margin: 0 20px 0 0;
+}
+
+#navigation h3 { margin: 0; }
+
+#content-container
+{
+	/*float: left;*/
+	/*width: 1200px;*/
+	background-color: #fff;
+    background-image: url(./images/background.png);
+	/* go up a directory, and then work down into images/styles directory */
+	background-repeat: repeat-y;
+	
+}
+
+#content
+{
+	display: inline-block;
+	/*float: right;*/
+	width: 860px;
+	padding: 20px 0;
+	margin: 0 0 0 30px;
+	/*display: inline;*/
+}
+
+#content h2 { margin: 0; }
+
+#footer
+{
+	clear: both;
+	background: #ccc;
+	text-align: right;
+	padding: 20px;
+	height: 1%;
+}
+
+#footer img{
+	vertical-align: middle;
+}
